@@ -22,3 +22,22 @@ print("descending order")
 dict_2 = sorted(dict.items() , key = operator.itemgetter(0),reverse=True)
 
 print(dict_2)
+
+
+
+print()
+
+import operator
+
+d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+
+print("The original values of Dict",d)
+
+print("Ascending order: ")
+d1=sorted(d.items(), key=operator.itemgetter(0))
+
+print (d1)
+
+d2 = sorted(d.items(),key=operator.itemgetter(0), reverse = True)
+print("Descending order")
+print(d2)
